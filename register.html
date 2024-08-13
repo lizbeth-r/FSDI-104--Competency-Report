@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <title>Register</title>
+    <link rel="stylesheet" href="/style/main.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container-header">
+            <div class="flex-header"><a href="index.html">
+                    <h1>The Fashion Pet</h1>
+                </a>
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="register.html">Register</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <form action="#" id="petsForm">
+            <div class="form-container">
+                <h2>Register Form</h2>
+                <label for="name" class="form-label">Pet Name:</label>
+                <input placeholder="Pet Name" type="text" id="txtName" class="form-control" />
+
+                <label for="age" class="form-label">Age:</label>
+                <input placeholder="Age" type="text" id="txtAge" class="form-control" />
+
+                <label for="gender" class="form-label">Gender:</label>
+                <input placeholder="Gender" type="text" id="txtGender" class="form-control" />
+
+                <label for="Breed" class="form-label">Breed: </label>
+                <input placeholder="Breed" type="text" id="txtBreed" class="form-control" />
+
+                <label for="service" class="form-label">Service: </label>
+                <select id="service" name="service" class="form-select">
+                    <option value="" disabled selected>Select a service</option>
+                    <option value="Grooming">Grooming</option>
+                    <option value="DayCare">DayCare</option>
+                    <option value="Mobile Dog<br>Grooming Service">Mobile Dog Grooming Service</option>
+                </select>
+            <button onclick="register()" class="btn-r">Register</button>
+            </div>
+        </form>
+    </main>
+    <div class="container">
+        <div class="table">
+            <h2>Registered pets <span id="totalPet">00</span></h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Age</th>
+                        <th scope="col">Gender</th>
+                        <th scope="col">Breed</th>
+                        <th scope="col">Service</th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody id="pets">
+
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+    <footer>
+        <div class="flex-footer">
+            <a href="index.html">The Fashion Pet<a>
+        </div>
+    </footer>
+    <script src="./script/register.js"></script>
+    <script src="./script/display.js"></script>
+</body>
+
+</html>
